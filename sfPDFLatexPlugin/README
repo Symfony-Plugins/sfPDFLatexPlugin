@@ -1,0 +1,42 @@
+# sfPDFLatexPlugin
+
+## Overview
+This plugin allows you to use the full power of LaTeX to generate PDF.
+
+## Maintainer
+Please report all bugs to Konrad Riedel 
+
+## Prerequisites
+ * Make sure you are using the latest version of symfony (at least version 1.0).
+ * A latex distribution, for debian/ubuntu type:
+
+    apt-get install texlive
+
+## Install the Plugin
+
+To install the plugin from the symfony command line, run the following command:
+
+    $ symfony plugin-install http://plugins.symfony-project.com/sfPDFLatexPlugin
+
+Clear the cache to enable the autoloading to find the new classes:
+
+    $ php symfony cc
+
+To test your installation enable the sfPDFLatex module in your application, via the settings.yml file.
+
+    // in myproject/apps/frontend/config/settings.yml
+    all:
+      .settings:
+        enabled_modules:        [default, sfPDFLatex]
+
+Get your first pdf by browsing to this page:
+
+    http://myproject/frontend_dev.php/sfPDFLatex/test
+
+##Configuration
+	
+	
+## TODO
+ * Windows support
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfPDFLatexPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>PDF plugin using standard LaTeX macros to typeset LaTeX documents</summary>
+ <description>including hyperlinks, tables of contents and document information</description>
+ <lead>
+  <name>Konrad Riedel</name>
+  <user/>
+  <email>riedel@ibr-oss.de</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-11-01</date>
+ <version>
+   <release>0.6.2</release>
+   <api>0.6.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents><dir name="/"><dir name="web"/><dir name="modules"><dir name="sfPDFLatex"><dir name="templates"><file name="testSuccess.php" role="data"/><file name="firm.pdf" role="data"/></dir><dir name="config"><file name="module.yml" role="data"/></dir><dir name="actions"><file name="actions.class.php" role="data"/></dir></dir></dir><dir name="lib"><dir name="helper"><file name="LatexHelper.php" role="data"/></dir><file name="sfPDFView.class.php" role="data"/></dir><dir name="config"/><file name="README" role="data"/><file name="LICENSE" role="data"/></dir></contents>
+
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>0.8.1</min>
+    <max>1.1.0</max>
+    <exclude>1.1.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+
+ <phprelease>
+ </phprelease>
+
+ <changelog>
+ </changelog>
+</package>
